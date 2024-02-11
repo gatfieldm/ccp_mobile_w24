@@ -124,7 +124,10 @@ img {
 }
 .grid-travel {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    p{
+        font-style: italic  ;
+    }
 
 }
 .grid-travel-title{
@@ -134,6 +137,20 @@ img {
 .grid-gallery-3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    p {
+        font-style: italic;
+    
+    }
+}
+.Niagara-div p{
+    margin: 0 auto;
+    text-align: center;
+    font-style: italic;
+}
+.Niagara {
+    justify-content: center;
+    display: grid;
+    margin: 0 auto;
 }
 .center-image {
     margin: 0 auto;
@@ -173,3 +190,15 @@ footer {
     width: 100%;
 }
   
+/* Media Queries
+Did you include media queries to ensure that any gifs or other animation are not displayed when the user prefers reduced-motion? */
+@media (prefers-reduced-motion: reduce) {
+    .gif {
+      display: none;
+    }
+    * {
+        animation-duration: 0.01ms;
+        transition-duration: 0.01ms;
+      }
+  }
+
