@@ -119,11 +119,14 @@ img {
 }
 .grid-gallery {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
 }
 .grid-travel-4 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+
 }
 .grid-travel {
     display: grid;
@@ -136,13 +139,19 @@ img {
 .grid-travel-title{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 10px;
 }
 .grid-gallery-3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
     p {
         font-style: italic;
     
+    }
+    figcaption {
+        text-align: center;
+        font-style: italic;
     }
 }
 .Niagara-div p{
